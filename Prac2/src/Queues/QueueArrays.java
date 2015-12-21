@@ -1,7 +1,7 @@
 package Queues;
 
 public class QueueArrays {
-	int size,i;
+	int size,i=0;
 	int front,rear;
 	int QArray[];
 	
@@ -23,16 +23,17 @@ public class QueueArrays {
 		if(IsFull()==true){
 			System.out.println("The queue is full");
 		}
-		else
 			
 			if(front==-1){
 				front=front+1;
-			
+			}
+		
+				
 			this.QArray[rear+1]=value;
 			System.out.println("Element enqueued"+QArray[rear+1]);
 	}
 	
-	}
+	
 	
 	
 	public void dequeue(){
@@ -44,8 +45,8 @@ public class QueueArrays {
 	
 	public void display(){
 		System.out.println("Queue Elements are:");
-		for(i=front;i<rear;i++){
-			System.out.println("\n"+QArray[i]);
+		for(i=0;i<size;i++){
+			System.out.println("\t"+QArray[i]);
 		}
 	}
 }
