@@ -5,12 +5,12 @@ public class ArrayListQueue implements Queue{
 
 	public void enqueue(int value){
 		array.add(value);
-		System.out.println(array);
+		System.out.println("Enqueued element"+array+"\n");
 	}
 	
 	 public void dequeue() {
 		  if (!isEmpty())
-		  System.out.println(array.remove(0)); 
+		  System.out.println("Dequeued element"+array.remove(0)+"\n"); 
 		
 		
 		 }
@@ -20,6 +20,7 @@ public class ArrayListQueue implements Queue{
 		 }
 
 		 public void display(){
+			 System.out.println("Array Elemnts:");
 			 System.out.println(array);
 		 }
 	
