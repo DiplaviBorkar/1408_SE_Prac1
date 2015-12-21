@@ -1,6 +1,6 @@
 package Queues;
 
-public class QueueArrays {
+public class QueueArrays implements Queue{
 	int size,i=0;
 	int front,rear;
 	int QArray[];

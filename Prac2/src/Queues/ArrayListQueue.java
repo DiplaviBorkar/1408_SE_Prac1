@@ -1,6 +1,6 @@
 package Queues;
 import java.util.ArrayList; 
-public class ArrayListQueue {
+public class ArrayListQueue implements Queue{
 	ArrayList array=new ArrayList();
 
 	public void enqueue(int value){
@@ -8,10 +8,10 @@ public class ArrayListQueue {
 		System.out.println(array);
 	}
 	
-	 public int dequeue() {
+	 public void dequeue() {
 		  if (!isEmpty())
-		   return (int) array.remove(0);
-		return 0;
+		  System.out.println(array.remove(0)); 
+		
 		
 		 }
 
