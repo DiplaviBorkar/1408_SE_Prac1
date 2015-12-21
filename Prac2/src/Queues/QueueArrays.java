@@ -28,9 +28,9 @@ public class QueueArrays {
 				front=front+1;
 			}
 		
-				
-			this.QArray[rear+1]=value;
-			System.out.println("Element enqueued"+QArray[rear+1]);
+				rear=rear+1;
+			this.QArray[rear]=value;
+			System.out.println("Element enqueued"+QArray[rear]);
 	}
 	
 	
@@ -44,8 +44,11 @@ public class QueueArrays {
 	}
 	
 	public void display(){
+		if((front==-1)||(rear==-1)){
+			System.out.println("Queue Empty");
+		}
 		System.out.println("Queue Elements are:");
-		for(i=0;i<size;i++){
+		for(i=front; i<=rear; i++){
 			System.out.println("\t"+QArray[i]);
 		}
 	}
